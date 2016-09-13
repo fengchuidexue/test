@@ -1,0 +1,27 @@
+{
+  "name": "dubaoping/test",
+  "description": "test",
+  "type": "project",
+  "keywords": [
+    "test",
+    "dubaoping",
+    "laravel"
+  ],
+  "homepage": "http://c67_dubaoping.houdunphp.com/",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "杜宝平",
+      "email": "1352780796@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+   "psr-4": {
+      "app\\": "app"
+    }
+  }
+}
