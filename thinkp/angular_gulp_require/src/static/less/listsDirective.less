@@ -1,0 +1,38 @@
+.listsDirective {
+  display : flex;
+  .menu {
+    width      : 30vw;
+    background : green;
+    ul {
+      li {
+        padding : 10px;
+      }
+    }
+  }
+  .lists {
+    //background : red;
+    flex : 1;
+    dl {
+      dt {
+        background : #999999;
+        color      : #ffffff;
+      }
+      dd {
+        display : flex;
+        div.pic {
+          img {
+            width  : 80px;
+            height : 80px;
+          }
+        }
+        div.desc {
+          flex : 1;
+          div.price {
+            display : flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

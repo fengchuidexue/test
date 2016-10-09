@@ -1,0 +1,1 @@
+define('allDirectives', ['testDirective','slideDirective','cartDirective','coverDirective','testDirective'], function () {});

@@ -1,0 +1,17 @@
+<div class="hd-goods">
+    <a href="" ui-sref="home">返回</a>
+    <img src="src/static/images/goods.jpg" alt="">
+    <div class="info">
+        <h1>{{field.title}}</h1>
+        <div>
+            <span class="price">￥{{field.price}}</span>
+            <span class="add-cart" ng-click="cartServer.add(field)">加入购物车</span>
+        </div>
+    </div>
+    <dl>
+        <dt>商品信息</dt>
+        <dd>
+            {{field.desc}}
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,16 @@
+.pages span{
+	margin: 10px 10px;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+.pages a{
+	/*display: block;*/
+	width: 50px;
+	margin: 20px 10px;
+		padding: 10px;
+	border: 1px solid red;
+}
+body{
+	background: red;
+}

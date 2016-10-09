@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>角色列表</title>
+		<meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+		<!-- Loading Bootstrap -->
+		<link href="__PUBLIC__/Admin/Flat/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+		<!-- Loading Flat UI -->
+		<link href="__PUBLIC__/Admin/Flat/dist/css/flat-ui.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="__PUBLIC__/Admin/Flat/img/favicon.ico">
+	
+	</head>
+
+	<body>
+		<div class="wrp">
+			<a href="{:U('Rbac/addNode')}">添加应用</a>
+			<foreach name="data" item="app">
+				 <div class="app">
+				 	<p>
+				 			<strong>{$app['title']}</strong>		
+				 			<a href="{:U('Rbac/addNode',array('pid'=>$app['pid'],'level'=>2))}">添加控制器</a>
+				 	</p>
+				 </div>
+			</foreach>
+		</div>
+	
+		
+	</body>
+
+</html>

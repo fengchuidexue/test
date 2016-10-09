@@ -1,0 +1,32 @@
+<div class="hd-order">
+    <div class="info">
+        <div class="address">
+            <p>向军 先生 18600276067</p>
+            <p>北京市朝阳区后盾IT教育</p>
+        </div>
+        <div class="times">
+            <span>送达时间</span>
+            <span class="desc">30分钟后送达</span>
+        </div>
+    </div>
+    <div class="goods" ng-if="data.length>0">
+        <ul>
+            <li ng-repeat="v in data">
+                <h2>{{v.title}}</h2>
+                <div class="pic">
+                    <img src="src/static/images/cover.jpg">
+                    <div>
+                        {{v.desc}}
+                        <p> 
+                            <span class="price">￥{{v.price}}</span>
+                            <span class="plus" ng-click="cartServer.add(v)"><i class="fa fa-plus-circle"></i></span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div ng-if="data.length==0">
+        <a href="" ui-sref="home">购买车为空,请选择商品....</a>
+    </div>
+</div>
